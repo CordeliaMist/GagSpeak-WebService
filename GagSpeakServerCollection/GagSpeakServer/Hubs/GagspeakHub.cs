@@ -299,9 +299,6 @@ public partial class GagspeakHub : Hub<IGagspeakHub>, IGagspeakHub
         // otherwise, this is a new connection, so lets establish it.
         else
         {
-            /* _metrics.IncGaugeWithLabels(MetricsAPI.GaugeConnections, lebels: Continent); 
-             * ^^^^^ Leave this out if possible, requires grabbing IP just to set, not ok with that */
-
             // next up, try and log the connection attempt with the user details
             try
             {
